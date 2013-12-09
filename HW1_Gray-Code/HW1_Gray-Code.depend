@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1386618968 source:/home/deck3r/UCSCExt/EmbededFirmware/EFE_Homework/HW1_Gray-Code/main.c
+	"hw1_lib.h"
+
+1386617897 /home/deck3r/UCSCExt/EmbededFirmware/EFE_Homework/HW1_Gray-Code/hw1_lib.h
+	<stdio.h>
+	<stdint.h>
+
+1386618314 source:/home/deck3r/UCSCExt/EmbededFirmware/EFE_Homework/HW1_Gray-Code/hw1_lib.c
+	"hw1_lib.h"
+
