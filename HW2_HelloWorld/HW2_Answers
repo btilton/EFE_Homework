@@ -1,0 +1,26 @@
+How many text files and how many lines of text code in the exported offline code package?
+   a)67 text files containing 10386 lines
+   b)66 text files containing 9936 lines
+   using commands:
+   $ find . -type f -print|xargs file -i|grep ascii|wc -l
+   and
+   $ find . -type f -print|xargs file -i|grep ascii|cut -d ':' -f1|xargs wc -l
+   
+How many binary (library or object) files?
+   a)7
+   b)6
+   using command:
+   $ find . -type f -print|xargs file -i|egrep '\.o|\.a'|wc -l
+   
+How many files are different between (a) and (b)? (Use linux commands: find, wc, diff) (10 points)
+   5 files excluse to their builds.
+     2 exclusive to GCC
+     3 exclusive to uVision
+   using comand:
+   $ diff -r ../HelloWorld-uVision/ ../HelloWorld-GCC\(ARMEmbedded\)/
+
+What is the "Entry point address:" of your program?  (hint: using readelf)
+   Entry point address is 0x1f1
+   
+   a) uVision
+   b) GCC ARM Embedded
